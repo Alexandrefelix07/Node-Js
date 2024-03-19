@@ -13,3 +13,4 @@ function somar() {
 }
 
 export { pessoa, somar }
+//export { pessoa, somar as default} modelo deixar um default na exportação
