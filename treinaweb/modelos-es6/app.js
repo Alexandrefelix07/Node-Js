@@ -1,4 +1,4 @@
-import { pessoa } from './pessoa.mjs';
+import { pessoa } from './pessoa.js';
 
 console.log(pessoa.nome);
 pessoa.andar();
