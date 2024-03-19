@@ -1,5 +1,5 @@
-import { pessoa, somar } from './pessoa.js';
+import * as ModuloPessoa from './pessoa.js';
 
-console.log(pessoa.nome);
-pessoa.andar();
-console.log(somar());
+console.log(ModuloPessoa.pessoa.nome);
+ModuloPessoa.pessoa.andar();
+console.log(ModuloPessoa.somar());
