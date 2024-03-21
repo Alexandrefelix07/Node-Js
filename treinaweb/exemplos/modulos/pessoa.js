@@ -7,3 +7,4 @@ var pessoa = {
 }
 
 module.exports = pessoa;
+//jeito antigo sem usar o package.json
