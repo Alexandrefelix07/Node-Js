@@ -11,6 +11,7 @@ const server = http.createServer((req, res) => {
     });
 
     html = html.replace('{{data_atual}}', currentDate);
+    
 
     const options = {
         format: 'A4',
