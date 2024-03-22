@@ -1,36 +1,29 @@
 // npm init > npm install typescript --D
 // npx tsc app.ts   para gerar o arquivo
+// npm install readline
+// npm install --save-dev
 import { exemploEx01 } from "./ex01";
-import * as readline from 'readline';
+import * as readline from "readline";
 
 var a: string = "treinaweb";
 var b: number = 123;
 
 const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
+  input: process.stdin,
+  output: process.stdout,
 });
 
-
-function exibirMenu(): void {
+function exibirMenu() {
   console.log("Menu:");
   console.log("1. Chamar função exemplos");
   console.log("0. Sair");
 }
 
-function main(): void {
-  let opcao: number = -1;
+function main() {
+  let opcao = -1;
 
-  while (opcao !== 0) {
-    exibirMenu();
-    const input: string | null = prompt("Digite a opção desejada: ");
-
-    if (input !== null) {
-      opcao = parseInt(input);
-    } else {
-      console.log("Entrada inválida. Tente novamente.");
-      continue;
-    }
+  rl.on("line", (input) => {
+    opcao = parseInt(input);
 
     switch (opcao) {
       case 1:
@@ -38,12 +31,19 @@ function main(): void {
         break;
       case 0:
         console.log("Saindo...");
+        rl.close();
         break;
       default:
         console.log("Opção inválida. Tente novamente.");
         break;
     }
-  }
+
+    if (opcao !== 0) {
+      exibirMenu();
+    }
+  });
+
+  exibirMenu();
 }
 
 main();
