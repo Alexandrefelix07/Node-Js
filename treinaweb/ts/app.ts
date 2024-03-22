@@ -5,6 +5,7 @@
 // npm i typescript --D
 // npm i @types/node
 // npm i ts-node-dev -D
+// npx ts-node-dev app.ts  nao gera o arquivo js 
 import { exemploEx01 } from "./ex01";
 import { exemploEx02 } from "./ex02";
 
