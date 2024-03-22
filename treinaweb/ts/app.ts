@@ -1,8 +1,11 @@
 // npm init > npm install typescript --D
-// npx tsc app.ts   para gerar o arquivo
+// npx tsc app.ts --target ES6  para gerar o arquivo
 // npm install readline
 // npm install --save-dev
+// npm install @types/node
 import { exemploEx01 } from "./ex01";
+import { exemploEx02 } from "./ex02";
+
 import * as readline from "readline";
 
 var a: string = "treinaweb";
@@ -16,6 +19,7 @@ const rl = readline.createInterface({
 function exibirMenu() {
   console.log("Menu:");
   console.log("1. Chamar função exemplos");
+  console.log("2. Gerar Arquivo txt ");
   console.log("0. Sair");
 }
 
@@ -28,6 +32,9 @@ function main() {
     switch (opcao) {
       case 1:
         exemploEx01(b, a);
+        break;
+      case 2:
+        exemploEx02();
         break;
       case 0:
         console.log("Saindo...");
