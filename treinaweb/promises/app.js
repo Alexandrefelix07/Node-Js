@@ -16,10 +16,10 @@ import * as fs from 'fs'
 function read(file) {
     return new Promise((resolve, reject) => {
         fs.readFile(file, (err, data) => {
-            if (err) {
-                reject(err);
-            } else {
-                resolve(data.toString());
+            try {
+                resolve(data.toString());//sempre retorna isso com tratamento
+            } catch {
+                reject('Erro de Leitura de arquivo ');//sempre retorna isso com tratamento   
             }
         });
     });
