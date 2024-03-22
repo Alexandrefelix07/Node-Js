@@ -8,7 +8,7 @@ import { exemploEx01 } from "./ex01";
 
 import * as readline from "readline";
 
-var endereco: string = "Av marechal gouveia";
+//var endereco: string = "Av marechal gouveia";
 var a: string = "treinaweb";
 var b: number = 123;
 
