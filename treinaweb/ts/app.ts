@@ -1,8 +1,10 @@
-// npm init > npm install typescript --D
-// npx tsc app.ts --target ES6  para gerar o arquivo
-// npm install readline
-// npm install --save-dev
-// npm install @types/node
+// npx tsc app.ts para gerar o arquivo
+// npm i readline  extra do curso
+// npm i --save-dev extra do curso
+// npm init
+// npm i typescript --D
+// npm i @types/node
+// npm i ts-node-dev -D
 import { exemploEx01 } from "./ex01";
 import { exemploEx02 } from "./ex02";
 
