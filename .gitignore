@@ -1,0 +1,19 @@
+# Arquivos compilados pelo TypeScript
+*.js
+*.js.map
+
+# Diretório node_modules
+node_modules/
+
+# Arquivos de configuração do TypeScript
+tsconfig.json
+tsconfig.*.json
+
+# Arquivos de dependências do Yarn
+yarn.lock
+
+# Arquivos de dependências do npm
+package-lock.json
+
+# Diretório de saída de compilação (se estiver diferente do padrão)
+# dist/
