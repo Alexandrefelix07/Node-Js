@@ -7,6 +7,7 @@ import { exemploEx01 } from "./ex01";
 import { exemploEx02 } from "./ex02";
 
 import * as readline from "readline";
+var endereco: string = "Av marechal gouveia";
 
 var a: string = "treinaweb";
 var b: number = 123;
@@ -34,7 +35,7 @@ function main() {
         exemploEx01(b, a);
         break;
       case 2:
-        exemploEx02();
+        exemploEx02(endereco);
         break;
       case 0:
         console.log("Saindo...");

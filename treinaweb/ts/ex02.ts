@@ -1,9 +1,7 @@
 import * as fs from "fs";
 
-var endereco: string = "Av marechal gouveia";
-
-export function exemploEx02(): void {
-  fs.writeFile("arquivo.txt", endereco, (err) => {
+export function exemploEx02(texto: string): void {
+  fs.writeFile("arquivo.txt", texto, (err) => {
     if (err) {
       console.log(err);
     }
